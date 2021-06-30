@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Stylesheet reference-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Raleway&display=swap" rel="stylesheet">
+    
+    <title>Data input form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      
+      <div class="content">
+        <div class="title">Enter new equipment details:</div>
+      <form method="POST" action="/retrieve.html" class="contact-form">
+      <div class="user-details">
+
+        <div class="input-box">
+          <div class="input-details">
+            <label for="">Name of Equipment</label><br>
+            <input class="name" type="text" placeholder=" " /><br>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="">Plant</label><br>
+          <input class="plant" type="text" placeholder=" " /><br>    
+        </div>
+
+        <div class="input-box">
+          <label for="">Due-date</label><br>
+          <input class="due_date" type="date" placeholder=" " /><br>    
+        </div>
+
+        <div class="input-box">
+          <label for="">Range</label><br>
+          <input class="range" type="number" placeholder=" " /><br>
+        </div>
+
+      <div class="input-box">
+        <label for="">Desire accuracy</label><br />
+        <input class="des_accuracy" type="varchar" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Equipment number:</label><br />
+        <input class="equip_no" type="number" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Calibration Frequency</label><br />
+        <input class="calib_freq" type="text" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Intimation days</label><br />
+        <input class="intim_days" type="number" placeholder="10 DAYS " value="10 Days" readonly/><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Section</label><br />
+        <input class="section" type="text" placeholder="" /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Location of use</label><br />
+        <input class="location" type="text" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Equipment Description</label><br />
+        <input class="equip_desc" type="text" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Last Calibration date</label><br />
+        <input class="last_calib" type="date" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box">
+        <label for="">Status</label><br />
+        <input class="status" type="varchar" placeholder=" " /><br />
+      </div>
+
+      <div class="input-box"> 
+        <label for="">Remarks</label><br />
+        <input class="remarks" type="varchar" placeholder=" " required/><br />
+      </div>
+    </div>
+    <br />
+    
+    <div class="button">
+      <input type="submit" value="Submit"><br /> 
+    </div>
+
+    </form><br>
+    </div>
+    <!--<a href="retrieve.html">Click here to go to the equipments page</a>-->
+  
+  </div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
